@@ -1,0 +1,24 @@
+Hi ${NAME},
+
+<br/>
+
+Greetings for the day...!!
+
+<br/>
+
+Please unlock your account using below details to use TollPlus application.
+
+<br/>
+
+Temporary Pwd : ${TEMP-PWD}
+<br/>
+
+<a href="http://localhost:9090/unlock?email=${EMAIL-ID}">Click Here To Unlock</a>
+
+<br/>
+
+Thanks & Regards,<br/>
+TollPlus Team.
+
+
+

@@ -1,0 +1,31 @@
+server:
+  port: 9090
+spring:
+  datasource:
+    driverClassName: org.h2.Driver
+    password: null
+    url: jdbc:h2:mem:testdb
+    username: sa
+  h2:
+    console:
+      enabled: true
+      path: /h2
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+    show-sql: true
+  mvc:
+    view:
+      prefix: /views/
+      suffix: .jsp
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: javaproject.02.7am@gmail.com
+    password: JavaProject@123
+    properties.mail.smtp: 
+              auth: true
+              starttls.enable: true
