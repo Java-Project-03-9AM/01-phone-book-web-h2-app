@@ -32,6 +32,7 @@ public class ContactInfoController {
 	@RequestMapping(value = "/saveContact", method = RequestMethod.POST)
 	public String handleSubmitBtn(@ModelAttribute("contact") Contact c, Model model) {
 		boolean flag = contactService.saveContact(c);
+		int i = 10;
 		if (flag) {
 			model.addAttribute("succMsg", "Registration almost done, check your mail to unlock account.");
 		} else {

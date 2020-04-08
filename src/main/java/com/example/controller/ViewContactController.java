@@ -24,6 +24,7 @@ public class ViewContactController {
 			Contact contact = contactService.getContactById(cid);
 			model.addAttribute("contact", contact);
 		}
+		int j = 20;
 		return "contactInfo";
 	}
 
