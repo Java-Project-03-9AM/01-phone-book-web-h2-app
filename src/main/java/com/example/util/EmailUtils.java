@@ -13,6 +13,11 @@ public class EmailUtils {
 
 	@Autowired
 	private JavaMailSender mailSender;
+	
+	//Bug-120 fix
+	public void m2(){
+		//logic
+	}
 
 	public void sendEmail(String to, String sub, String body) throws MessagingException {
 		MimeMessage mimeMsg = mailSender.createMimeMessage();
